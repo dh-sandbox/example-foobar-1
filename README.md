@@ -44,7 +44,7 @@ The browser extension will also highlight the newly covered lines in `foo_bar.rb
 ![Screenshot 2023-01-25 at 8 29 32 PM](https://user-images.githubusercontent.com/18341459/214745367-1630cd55-37c7-4b4a-888b-64b1bae5e079.png)
 
 
-## Introduce some duplication
+## Introduce some duplication 
 
 1. On your existing `demo-branch` branch, modify `duplication.rb` and `duplication_2.rb` with [these](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-duplication-rb) [files](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-duplication_2-rb)
 
