@@ -69,10 +69,5 @@ enabled = true
 [smells.file_complexity]
 enabled = true
 
-[function_complexity]	
+[smells.function_complexity]	
 enabled = true
-
-
-
-file_complexity	Maximum allowed complexity for a single file	50
-function_complexity	Maximum function complexity
