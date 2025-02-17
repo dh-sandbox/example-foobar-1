@@ -56,6 +56,8 @@ name = "default"
 repository = "https://github.com/qltyai/plugins.git"
 tag = "v0.122.0"
 
+[smells]
+mode = "block"
 
 [[plugin]]
 name = "checkov"
