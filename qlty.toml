@@ -97,28 +97,28 @@ smells:
   mode: null
   duplication:
     filter_patterns: []
-    nodes_threshold: 64
+    nodes_threshold: 2
   boolean_logic:
     enabled: true
-    threshold: 4
+    threshold: 2
   nested_control_flow:
     enabled: true
-    threshold: 5
+    threshold: 1
   function_parameters:
     enabled: true
-    threshold: 6
+    threshold: 1
   return_statements:
     enabled: true
-    threshold: 6
+    threshold: 1
   file_complexity:
     enabled: true
-    threshold: 50
+    threshold: 1
   function_complexity:
     enabled: true
-    threshold: 18
+    threshold: 1
   identical_code:
     enabled: true
-    threshold: 15
+    threshold: 1
   similar_code:
     enabled: true
-    threshold: 15
+    threshold: 1
