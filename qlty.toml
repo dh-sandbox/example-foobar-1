@@ -93,6 +93,32 @@ name = "trufflehog"
 [[plugin]]
 name = "yamllint"
 
-[smells.return_statements]
-enabled = true
-threshold = 100
+smells:
+  mode: null
+  duplication:
+    filter_patterns: []
+    nodes_threshold: 64
+  boolean_logic:
+    enabled: true
+    threshold: 4
+  nested_control_flow:
+    enabled: true
+    threshold: 5
+  function_parameters:
+    enabled: true
+    threshold: 6
+  return_statements:
+    enabled: true
+    threshold: 6
+  file_complexity:
+    enabled: true
+    threshold: 50
+  function_complexity:
+    enabled: true
+    threshold: 18
+  identical_code:
+    enabled: true
+    threshold: 15
+  similar_code:
+    enabled: true
+    threshold: 15
