@@ -1,0 +1,72 @@
+name: Main
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  pull_request:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Ruby ${{ matrix.ruby }}
+    strategy:
+      matrix:
+        ruby:
+          - "3.1"
+
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.11.0
+
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      - name: Run the default task
+        run: bundle exec rspec --require spec_helper
+
+      - uses: qltysh/qlty-action/coverage@main
+        with:
+          coverage-token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
+          files: coverage/.resultset.json
+          print-coverage: true
+          print-json-coverage: true
+
+
+# ----
+# version: 2
+# jobs:
+#   build:
+#     working_directory: ~/example-foobar
+#     docker:
+#       - image: ruby:2.4
+#     steps:
+#       - checkout
+#       - type: cache-restore
+#         key: example-foobar-{{ checksum "Gemfile.lock" }}
+#       - run: bundle install --path vendor/bundle
+#       - type: cache-save
+#         key: example-foobar-{{ checksum "Gemfile.lock" }}
+#         paths:
+#           - vendor/bundle
+#       # - run:
+#       #     name: Setup Code Climate test-reporter
+#       #     command: |
+#       #       curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+#       #       chmod +x ./cc-test-reporter
+#       # - run:
+#       #     name: Run tests
+#       #     command: |
+#       #       ./cc-test-reporter before-build
+#       #       bundle exec rspec
+#       #       ./cc-test-reporter after-build
