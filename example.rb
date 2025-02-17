@@ -3,3 +3,5 @@ class Example
     42
   end
 end
+
+
