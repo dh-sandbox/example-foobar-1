@@ -79,16 +79,6 @@ name = "ripgrep"
 name = "rubocop"
 
 [[plugin]]
-name = "trivy"
-drivers = [
-  "fs-vuln",
-  "config",
-]
-
-[[plugin]]
-name = "trufflehog"
-
-[[plugin]]
 name = "yamllint"
 
 [smells.return_statements]
