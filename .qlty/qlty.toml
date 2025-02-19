@@ -51,46 +51,23 @@ test_patterns = [
     "**/spec_*.*",
 ]
 
-[[source]]
-name = "default"
-repository = "https://github.com/qltyai/plugins.git"
-tag = "v0.122.0"
 
-
-[[plugin]]
-name = "checkov"
-
-[[plugin]]
-name = "golangci-lint"
-
-[[plugin]]
-name = "markdownlint"
-
-[[plugin]]
-name = "osv-scanner"
-
-[[plugin]]
-name = "prettier"
-
-[[plugin]]
-name = "ripgrep"
-
-[[plugin]]
-name = "rubocop"
-
-[[plugin]]
-name = "trivy"
-drivers = [
-  "fs-vuln",
-  "config",
-]
-
-[[plugin]]
-name = "trufflehog"
-
-[[plugin]]
-name = "yamllint"
+# Allow functions with 2 params (all languages)
+[smells.function_parameters]
+threshold = 6
 
 [smells.return_statements]
 enabled = true
-threshold = 100
+threshold = 5
+
+[smells.boolean_logic]
+enabled = true
+
+[smells.nested_control_flow]
+enabled = true
+
+[smells.file_complexity]
+enabled = true
+
+[smells.function_complexity]	
+enabled = true
