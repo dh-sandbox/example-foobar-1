@@ -77,6 +77,10 @@ name = "prettier"
 [[plugin]]
 name = "ripgrep"
 
+[[override]]
+plugins = ["rubocop", "ripgrep"]
+mode = "block"
+
 [[plugin]]
 name = "rubocop"
 
