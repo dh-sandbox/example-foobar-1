@@ -56,6 +56,8 @@ name = "default"
 repository = "https://github.com/qltyai/plugins.git"
 tag = "v0.122.0"
 
+[smells]
+mode = "block"
 
 [[plugin]]
 name = "checkov"
@@ -75,6 +77,10 @@ name = "prettier"
 [[plugin]]
 name = "ripgrep"
 
+[[override]]
+plugins = ["rubocop", "ripgrep"]
+mode = "block"
+
 [[plugin]]
 name = "rubocop"
 
@@ -91,6 +97,32 @@ name = "trufflehog"
 [[plugin]]
 name = "yamllint"
 
-[smells.return_statements]
-enabled = true
-threshold = 100
+smells:
+  mode: null
+  duplication:
+    filter_patterns: []
+    nodes_threshold: 2
+  boolean_logic:
+    enabled: true
+    threshold: 2
+  nested_control_flow:
+    enabled: true
+    threshold: 1
+  function_parameters:
+    enabled: true
+    threshold: 1
+  return_statements:
+    enabled: true
+    threshold: 1
+  file_complexity:
+    enabled: true
+    threshold: 1
+  function_complexity:
+    enabled: true
+    threshold: 1
+  identical_code:
+    enabled: true
+    threshold: 1
+  similar_code:
+    enabled: true
+    threshold: 1
