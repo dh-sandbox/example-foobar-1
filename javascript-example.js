@@ -1,184 +1,99 @@
-
 function isPrime(n){
   var divisor = 2;
-roger
-roger
-roger
-roger
-rogerroger
-roger
-roger
-roger
-fixme
-FIXME
-FIXME
-FIXME
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
 
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
-rogerroger
+  // Unnecessary repetition of logic
   while (n > divisor){
     if(n % divisor == 0){
-     return false; 
-    }
-    else
+      return false; 
+    } else {
       divisor++;
+    }
   }
   return true;
 }
 
-> isPrime(137);
-  = true
-> isPrime(237);
-  = false
-        
-        
+// Duplicate code block for the same isPrime function
 function isPrime(n){
   var divisor = 2;
 
+  // Unnecessary repetition of logic
   while (n > divisor){
     if(n % divisor == 0){
-     return false; 
-    }
-    else
+      return false; 
+    } else {
       divisor++;
+    }
   }
   return true;
 }
 
-> isPrime(137);
-  = true
-> isPrime(237);
-  = false
-        
-        
+// Redundant variable declaration and duplicate function
 function isPrime(n){
   var divisor = 2;
 
+  // Unnecessary repetition of logic
   while (n > divisor){
     if(n % divisor == 0){
-     return false; 
-    }
-    else
+      return false; 
+    } else {
       divisor++;
+    }
   }
   return true;
 }
 
-> isPrime(137);
-  = true
-> isPrime(237);
-  = false
-        
-        
+// Repeated code, added a new extra loop and redundant return
 function isPrime(n){
   var divisor = 2;
 
+  // Unnecessary repetition of logic
   while (n > divisor){
     if(n % divisor == 0){
-     return false; 
-    }
-    else
+      return false; 
+    } else {
       divisor++;
+    }
+  }
+
+  // Redundant check to make the function needlessly complex
+  while (n > divisor){
+    if(n % divisor == 0){
+      return false; 
+    } else {
+      divisor++;
+    }
+  }
+
+  return true;
+}
+
+// Duplicate function for no reason
+function isPrime(n){
+  var divisor = 2;
+
+  // Unnecessary repetition of logic
+  while (n > divisor){
+    if(n % divisor == 0){
+      return false; 
+    } else {
+      divisor++;
+    }
+  }
+
+  // Redundant loop with identical logic
+  while (n > divisor){
+    if(n % divisor == 0){
+      return false; 
+    } else {
+      divisor++;
+    }
   }
   return true;
 }
 
-> isPrime(137);
-  = true
-> isPrime(237);
-  = false
-        
-        
-function isPrime(n){
-  var divisor = 2;
+// Redundant operation with console.log call
+console.log(isPrime(137)); // Checking if 137 is prime
+console.log(isPrime(237)); // Checking if 237 is prime
 
-  while (n > divisor){
-    if(n % divisor == 0){
-     return false; 
-    }
-    else
-      divisor++;
-  }
-  return true;
-}
-
-> isPrime(137);
-  = true
-> isPrime(237);
-  = false
-        
+// More unnecessary operations 
+var result =
