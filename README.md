@@ -11,7 +11,7 @@ Example files: https://gist.github.com/dblandin/589e70345774298e1622850349c31876
 3. Import your new fork of the repo to Quality, using the `Open Source` section of the Quality UI.
 4. Update the included CircleCI config file with the Test Reporter ID found in your Repo Settings in Quality.
 5. Create a CircleCI user, and add your repo to CircleCI. 
-6. Head back to the Quality UI, and install the GitHub PR Integration for your repo. 
+6. Head back to the Quality UI, and install the GitHub PR Integration for your repo..
 
 
 
