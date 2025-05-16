@@ -6,8 +6,7 @@ end
 
 
 class Example
-  def answer
-    42
+asdfadf
   end
 end
 
@@ -21,10 +20,15 @@ end
 
 
 
+asdf
+
+asdf
 class Example
   def answer
     42
   end
-end
 
-
+  class Example
+  def answer
+    42
+  end
