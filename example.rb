@@ -32,3 +32,24 @@ class Example
   def answer
     42
   end
+
+    
+asdf
+class Example
+  def answer
+    42
+  end
+
+  class Example
+  def answer
+    42
+    
+asdf
+class Example
+  def answer
+    42
+  end
+
+  class Example
+  def answer
+    42
