@@ -12,12 +12,14 @@ Example files: https://gist.github.com/dblandin/589e70345774298e1622850349c31876
 4. Update the included CircleCI config file with the Test Reporter ID found in your Repo Settings in Quality.
 5. Create a CircleCI user, and add your repo to CircleCI. 
 6. Head back to the Quality UI, and install the GitHub PR Integration for your repo. 
+asasdf
 
+asdf
 
-
+asdf
 ## Introduce some complexity
 
-1. In the GitHub UI, modify `foo_bar.rb` with [this content](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-foo_bar-rb) from gist
+1. In the GitHub UI, modify `foo_bar.rb` with [this content](https://gist.github.com/dblandin/589e7034asdf5774298e1622850349c31876#file-foo_bar-rb) from gist
 2. When committing the changes, create a new branch titled `demo-branch` for the commit and open a pull request. 
 
 You should now see a Cognitive Complexity issue reported by Quality as a PR status
@@ -29,8 +31,10 @@ uncovered lines via the browser extension and a drop in coverage via the `diff-c
 ![uncovered2](https://user-images.githubusercontent.com/18341459/214745680-0439f858-6cfc-4976-879e-3370d64ac1e3.jpg)
 
 
+fff
+ddd
 
-
+ggg
 ## Add some test coverage
 
 1. On your existing `demo-branch` branch, modify `spec/foo_bar_spec.rb` with [this content](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-foo_bar_spec-rb) from gist
