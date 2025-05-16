@@ -8,10 +8,29 @@ end
 class Example
 asdfadf
   end
-end
+endasdfasdf
 
 
 
+class Example
+asdfadf
+  end
+endasdfasdfclass Example
+asdfadf
+  end
+endasdfasdfclass Example
+asdfadf
+  end
+endasdfasdfclass Example
+asdfadf
+  end
+endasdfasdfclass Example
+asdfadf
+  end
+endasdfasdfclass Example
+asdfadf
+  end
+endasdfasdf
 class Example
   def answer
     42
