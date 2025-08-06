@@ -66,12 +66,6 @@ name = "osv-scanner"
 name = "prettier"
 
 [[plugin]]
-name = "eslint"
-
-[[plugin]]
-name = "radarlint-ruby"
-
-[[plugin]]
 name = "reek"
 
 [[plugin]]
