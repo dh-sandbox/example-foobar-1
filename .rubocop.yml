@@ -4,6 +4,8 @@ require:
 AllCops:
   TargetRubyVersion: 3.2
   DisabledByDefault: true
+  Exclude:
+    - 'spec/**/*.rb'
 
 RSpec/ExampleWording:
   Enabled: true
