@@ -1,5 +1,18 @@
+require:
+  - rubocop-rspec
+
 AllCops:
+  TargetRubyVersion: 3.2
   DisabledByDefault: true
+
+RSpec/ExampleWording:
+  Enabled: true
+
+RSpec/BeEq:
+  Enabled: true
+
+Layout/ExtraSpacing:
+  Enabled: true
 
 Metrics/AbcSize:
   Enabled: true
