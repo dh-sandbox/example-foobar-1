@@ -55,3 +55,22 @@ name = "rubocop"
 package_file = "Gemfile"
 package_filters = ["rubocop"]
 config_files = [".rubocop.yml"]
+
+[plugins.definitions.rubocop.drivers.lint]
+script = "rubocop --force-exclusion --format json ${target}"
+success_codes = [0, 1]
+output = "stdout"
+output_format = "rubocop"
+batch = true
+cache_results = true
+suggested = "targets"
+output_missing = "parse"
+
+[plugins.definitions.rubocop.drivers.format]
+script = "rubocop --force-exclusion --fix-layout ${target}"
+success_codes = [0, 1]
+output = "rewrite"
+cache_results = true
+batch = true
+driver_type = "formatter"
+suggested = "config"
