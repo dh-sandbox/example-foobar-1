@@ -43,36 +43,4 @@ test_patterns = [
 mode = "comment"
 
 [[source]]
-name = "default"
 default = true
-
-[[plugin]]
-name = "actionlint"
-
-[[plugin]]
-name = "checkov"
-
-[[plugin]]
-name = "golangci-lint"
-
-[[plugin]]
-name = "markdownlint"
-version = "0.41.0"
-
-[[plugin]]
-name = "osv-scanner"
-
-[[plugin]]
-name = "prettier"
-
-[[plugin]]
-name = "reek"
-
-[[plugin]]
-name = "ripgrep"
-
-[[plugin]]
-name = "rubocop"
-
-[[plugin]]
-name = "yamllint"
