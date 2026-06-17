@@ -43,7 +43,6 @@ test_patterns = [
 mode = "comment"
 
 [[source]]
-name = "default"
 default = true
 
 
